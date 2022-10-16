@@ -21,31 +21,41 @@
 
 .body {
     background-color: #BEE9E8;
-    margin-right: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
+}
+
+.main {
+    margin-right: 80px; /* Same as the width of the sidebar */
 }
 
 .fish {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 400;
     color: #1B4965;
-    /* margin-right: 10px; */
+    margin-bottom: 10px;
+    margin-right: 10px;
 
 }
 
 .fish__img {
+    display: flex;
     margin-top: 15px;
-    margin-right: 15px;
     border-radius: 20px;
+    height: 100px;
+    width: 150px; 
+    object-fit: cover;
 }
 
 .fish__text {
     display: flex;
     flex-flow: column wrap;
-    margin-right: 30px;
+    margin-right: 10px;
+    list-style: none;
+
 }
 
 .fish--property {
@@ -101,7 +111,7 @@
 }
 
 .aside {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: 90%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: absolute; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -111,7 +121,7 @@
   color: #CAE9FF;
   font-family: 'Merriweather Sans', sans-serif;
   overflow-x: hidden; /* Disable horizontal scroll */
-  margin-top: 140px;
+  margin-top: 130px;
   margin-right: 10px;
 }
 
@@ -135,6 +145,8 @@
     display: flex;
     margin-top: 20px;
     border-top: 3px dashed #0096c7;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .contact__text {
@@ -142,7 +154,7 @@
     justify-content: flex-start;
     font-family: 'Merriweather Sans', sans-serif;
     color: #1B4965;
-    font-size: 13px;
+    font-size: 14px;
     margin-right: 20px;
     margin-left: 80px;
 }
